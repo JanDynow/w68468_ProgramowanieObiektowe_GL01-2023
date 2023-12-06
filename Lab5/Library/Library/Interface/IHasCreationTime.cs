@@ -4,7 +4,8 @@ using System.Text;
 
 namespace Library.Interface
 {
-    interface IMacCreationTime
+    interface IHasCreationTime
     {
+
     }
 }

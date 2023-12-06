@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Library.Interface
 {
-    interface IEntity<T>
+    interface Ientity<T>
     {
         T Id { get; set; }
     }
