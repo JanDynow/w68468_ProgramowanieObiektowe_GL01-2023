@@ -1,0 +1,17 @@
+﻿using Library.Interfaces;
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace Library.Models
+{
+    public class Book : IEntity<int>, IHasCreationTime
+    {
+        public int Id { get; set; }
+        public DateTime CreationTime { get; set; }
+        public string Title { get; set; }
+        public string Author { get; set; }
+        public int PublishYear { get; set; }
+        public List<BorrowedBook> BorrowedBooks { get; set; } = new List<BorrowedBook>();
+    }
+}
